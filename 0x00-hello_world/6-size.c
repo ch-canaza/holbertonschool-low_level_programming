@@ -1,8 +1,10 @@
 #include <studio.h>
 /**
  *main - print function
+ *
  *Return:0
  */
+
 int main(void)
 {
 	printf("size of a char: %d byte(s)\n", sizeof(char));
