@@ -5,9 +5,12 @@
  * Description: entry
  *Return: alphabet
  */
-int maun(void)
+int main(void)
+
 {
+
 	char ch;
+
 
 	for (ch = 'a' ; ch <= 'z' ; ch++)
 {
@@ -15,10 +18,11 @@ int maun(void)
 	putchar(ch);
 
 }
-	for (char = A  ch <= Z ch++)
+	for (ch = 'A' ; ch <= 'Z' ; ch++)
 
 {
 	putchar(ch);
-	
+}
 	return (0);
+
 }
