@@ -8,13 +8,16 @@ int main(void)
 
 {
 
-	int x = 0;
-{
-	for (x = 97; x <= 122; x++)
+	int x;
 
-	putchar(x);
+	for (x = 'a'; x <= 'z'; x++)
+
+
+	putchar(x + '0');
+
+
 	putchar('\n');
-}
-	return 0;
+
+	return (0);
 
 }
