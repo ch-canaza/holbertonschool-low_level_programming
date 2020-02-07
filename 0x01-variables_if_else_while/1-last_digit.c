@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - saving last number o variable
+: * main - saving last number o variable
  * Description: serach last number and identify it
  * Return: 0
  */
