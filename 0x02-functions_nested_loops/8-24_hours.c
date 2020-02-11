@@ -1,47 +1,27 @@
 #include "holberton.h"
-
 /**
- * jack_bauer - prints every minute from 00:00 to 23:59
- *
- * Return: 0 on success and prints on stdout
+ *jack_bauer - print all hours of the day.
+ *Return: nothing
  */
 
 void jack_bauer(void)
 {
-	int hours;
-	int minutes;
+	int i, j, HH, Hh, MM, Mm;
 
-	for (hours = 0; hours <= 23; hours++)
+	for (i = 0; i < 24; i++)
 	{
-		for (minutes = 0; minutes <= 59; minutes++)
+		for (j = 0; j < 60; j++)
 		{
-			_putchar(get_first(hours) + '0');
-			_putchar(get_last(hours) + '0');
+			HH = i / 10;
+			Hh = i % 10;
+			_putchar(HH + '0');
+			_putchar(Hh + '0');
 			_putchar(':');
-			_putchar(get_first(minutes) + '0');
-			_putchar(get_last(minutes) + '0');
+			MM = j / 10;
+			Mm = j % 10;
+			_putchar(MM + '0');
+			_putchar(Mm + '0');
 			_putchar('\n');
 		}
 	}
-}
-
-/**
- * get_first - obtains the first digit of the input number
- * @n: input number from which the first digit is obtained
- *
- * Return: the first digit
- */
-
-int get_first(int n)
-{
-	if (n < 10)
-	{
-		n = 0;
-	}
-	while (n >= 10)
-	{
-		n = n / 10;
-	}
-
-	return (n);
 }
