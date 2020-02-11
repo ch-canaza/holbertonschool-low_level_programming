@@ -9,23 +9,25 @@
 int main(void)
 {
 	int x;
+	int y;
 
-	for (x = 0; x < 10; x++)
+	for (x = 48; x < 57; x++)
 
-{
+	for (y = 48; y < 57; y++)
+
 	putchar(48 + x);
 
-	if (x != 9)
+	 (x = y)
 
-	{
+
 
 	putchar(44);
 	putchar(32);
 
-	}
 
-	}
 
-	putchar(10);
+
+	putchar(x);
+	putchar(y);
 	return (0);
 }
