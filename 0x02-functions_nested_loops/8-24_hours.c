@@ -24,3 +24,24 @@ void jack_bauer(void)
 		}
 	}
 }
+
+/**
+ * get_first - obtains the first digit of the input number
+ * @n: input number from which the first digit is obtained
+ *
+ * Return: the first digit
+ */
+
+int get_first(int n)
+{
+	if (n < 10)
+	{
+		n = 0;
+	}
+	while (n >= 10)
+	{
+		n = n / 10;
+	}
+
+	return (n);
+}
