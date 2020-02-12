@@ -1,16 +1,19 @@
+
 #include "holberton.h"
 
 /**
  * main - tests function that prints if integer is positive or negative
+ * @i: int cheqked
  * Return: 0
  */
 
-int main(void)
+void positive_or_negative(int i)
 {
-	int i;
+	if (i > 0)
+	{
 
-	i = 0;
-	positive_or_negative(i);
+		printf("%d is positive\n", i);
+	}
 
 	return (0);
 }
