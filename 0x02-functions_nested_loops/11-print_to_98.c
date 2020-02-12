@@ -1,38 +1,32 @@
-#include <stdio.h>
 #include "holberton.h"
-
+#include <stdio.h>
 /**
- *print_to_98 - prints all numbers from n to 98
- *@i: number received.
- *Return: nothing.
+ * print_to_98 - writes tilll 98
+ * @n: initial_number
+ * Return: Nothing.
+ *
  */
-
-void print_to_98(int i)
+void print_to_98(int n)
 {
-	int n;
+	int total_count, i, contador;
 
-	if (i <= 98)
-	{
-		for (n = i; n <= 98; n++)
-		{
-			printf("%d", n);
-			if (n != 98)
-			{
-				printf(", ");
-			}
-		}
-		printf("\n");
-	}
+	if (n > 98)
+		total_count = n - 98;
 	else
+		total_count = 98 - n;
+	contador = n;
+	for (i = 0; i <= total_count; i++)
 	{
-		for (n = i; n >= 98; n--)
+		printf("%d", contador);
+		if (i != total_count)
 		{
-			printf("%d", n);
-			if (n != 98)
-			{
-				printf(", ");
-			}
+			putchar(',');
+			putchar(' ');
 		}
-		printf("\n");
+		if (n > 98)
+			contador--;
+		else
+			contador++;
 	}
+	putchar('\n');
 }
