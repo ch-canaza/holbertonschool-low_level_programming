@@ -1,6 +1,4 @@
 #include "holberton.h"
-#include <stdio.h>
-
 /**
  * mul - check the code for Holberton School students.
  * @a: multiplication
@@ -11,9 +9,9 @@
 int mul(int a, int b)
 
 {
-	if (a <= 0 || b <= 0 || a >= 0 || b >= 0)
+int c;
 
-		return (1);
-	else
-		return (0);
+c = a * b;
+return (c);
+
 }
