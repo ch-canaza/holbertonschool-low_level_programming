@@ -1,0 +1,23 @@
+#include "holberton.h"
+/**
+ * print_diagonal - check the code for Holberton School students.
+ * @n: diagonal
+ * Return: Always 0.
+ */
+void print_diagonal(int n)
+{
+	int x;
+	int y;
+
+	for (x = 0; x < n; x++)
+	{
+		for (y = 0; y < 10; y++)
+		{
+			if (x == y)
+			{
+				_putchar('*' + n);
+			}
+				_putchar('\n');
+		}
+	}
+}
