@@ -19,4 +19,5 @@ void print_diagonal(int n);
 void print_square(int size);
 void reset_to_98(int *n);
 void swap_int(int *a, int *b);
+int _strlen(char *s);
 #endif /* HOLBERTON_H */
