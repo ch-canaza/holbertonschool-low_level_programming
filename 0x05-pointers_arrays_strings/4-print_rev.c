@@ -1,9 +1,8 @@
 #include "holberton.h"
 
 /**
- * print_revvoid - print reverse
- * @s: string
- * char: string
+ * print_rev - print reverse
+ * @s: pointer to a string
  * Return: int
  */
 
