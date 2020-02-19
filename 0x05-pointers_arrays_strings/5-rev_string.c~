@@ -1,0 +1,22 @@
+#include "holberton.h"
+
+/**
+ * rev_string - fuction that reverse a string
+ * @s: pointer to a string
+ *
+ */
+
+void rev_string(char *s)
+
+{
+	for (i = 0; s[i] != '\n'; i++)
+		i--
+for (j = 0; j < i; j++ j--)
+
+	tmp = *(s + i);
+	*(s + i) = *(s + j);
+	*(s + j) = tmp;
+
+
+
+}
