@@ -1,0 +1,29 @@
+#include "holberton.h"
+
+/**
+ *leet - encode
+ *@p: pointer to a string
+ *Return: pointer
+ *
+ */
+
+char *leet(char *p)
+
+{
+
+int i, j;
+
+char low[] = "aeot", upp[] = "AEOT", numb[] = "43071";
+
+for (i = 0; p[i] != '\0'; i++)
+{
+	for (j = 0; p[0] != '\0'; j++)
+{
+if p[i] = low[j] || p[i] = upp[j]
+p[i] = n[i];
+}
+}
+
+return (p);
+
+}
