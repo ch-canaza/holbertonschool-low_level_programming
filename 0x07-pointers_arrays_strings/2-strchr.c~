@@ -1,0 +1,28 @@
+#include "holberton.h"
+
+/**
+ * _strchr - return a pointer to the first ocurrence of c
+ * @: character located in c
+ * @c: character to find in string
+ * @s: string to be reviwed
+ * Return: pointer if c is found  else null
+ */
+
+char *_strchr(char *s, char c)
+
+{
+	char i;
+
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		if (s[i] == c)
+		{
+		return (s);
+		}
+		else
+		{
+			return (NULL);
+	}
+}
+
+}
