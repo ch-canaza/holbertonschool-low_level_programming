@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "holberton.h"
 /**
  *set_string -  pass value of s to to
  *@s: original string
