@@ -1,0 +1,5 @@
+#!/bin/bash
+echo script that creates a static library called liball.a
+sleep 1s
+gcc -c *.c
+ar rc liball.a *.o
