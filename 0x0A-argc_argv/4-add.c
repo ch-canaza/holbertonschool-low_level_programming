@@ -9,24 +9,24 @@
 int main(int argc, char *argv[])
 {
 	/*(void) argc;*/
-	int i, j, add = 0;
+	int i, add = 0;
 
 	if (argc != 3)
 	{
 		printf("0\n");
 	}
-    if (argc < 48 && argc > 57)
+	if (argc < 48 && argc > 57)
 	    printf("Error\n");
 
     for (i = 0; i < argc; i++)
     {
-	    for (j = 1; j <= i; j++)
-	    {
-		    if (j < i)
-			    add = (atoi(argv[j])) + (atoi(argv[j + 1]));
+	    /* for (j = 1; j <= i; j++)
+	       {*/
+	    if (argv[i])
+			    add += (atoi(argv[i])); /*+ (atoi(argv[j + 1]));*/
 			   printf("%d\n", add);
 
-    }
+    
 }
 
     return (0);
