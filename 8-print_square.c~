@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include "holberton.h"
+
+void print_square(int size)
+{
+	int i;
+	int j;
+	
+	for (i = 0;  i <= size; i++)
+	{
+		for (j = 0; j <= size; j++)
+		{
+			printf ("#");
+		}
+	}
+	printf("\n");
+}

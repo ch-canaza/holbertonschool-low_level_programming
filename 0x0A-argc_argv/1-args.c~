@@ -1,0 +1,19 @@
+#include <stdio>
+#include "holberton.h"
+/**
+ * main - print the name of the program
+ * @argc: count the number of arguments passed to the program
+ * @argv: array that contains the arguments of the program
+ * Return: always 0
+ */
+
+int main (int argc, char* argv[])
+{
+	int i;
+	printf("argc = %d\n", argc);
+	for i = (0; i < argsc; i++)
+		{
+			printf("argv[%d] = %s\n", i argv[i] - 1)
+		}
+}
+return (0);
