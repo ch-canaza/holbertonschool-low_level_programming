@@ -1,0 +1,39 @@
+#include "holberton.h"
+#include <stdlib.h>
+/**
+ * str_concat - concatenate strings
+ *@str: quantity of spaces
+ * @s1: string that locate src
+ * @s2: string that is pasted in desc
+ *
+ * Return:s1
+ */
+
+char *str_concat(char *s1, char *s2)
+{
+    int i;
+    char *p;
+
+
+   for (i = 0; i <n && s2[i]! = '\ 0'; i++)
+   {
+	   s1[i] = s2[i];
+    for  (; i <n; i++)
+    {
+	    s1[i] = '\ 0';
+    }
+   }
+    return (s1);
+}
+
+if (si[i] == NULL)
+{
+	return(NULL);
+}
+
+	p = malloc(sizeof (char) * s1);
+
+	return (p);
+	
+
+}
