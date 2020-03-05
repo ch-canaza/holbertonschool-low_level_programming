@@ -5,7 +5,7 @@
 
 /**
  * malloc_checked - check the code for Holberton School students.
- *
+ * @b: unsigned int
  * Return: Always 0.
  */
 
