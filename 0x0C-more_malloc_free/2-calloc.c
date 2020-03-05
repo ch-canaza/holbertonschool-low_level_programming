@@ -3,10 +3,10 @@
 #include "holberton.h"
 
 /**
- * string_nconcat - function that concatenate two strings
- * @s1: first string
- * @s2: second string
- * @n: size of the string
+ * _calloc - create spaces and iniitialize in '\0'
+ * @nmemb: number of members
+ * @size:lenght of argument
+ * n: size of the string
  * Return: concatenated string
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
@@ -19,9 +19,9 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);/*nmemb and size must have value*/
 	}
 
-	ptr = malloc (nmemb * size);/*memory allocation*/
+	ptr = malloc(nmemb * size);/*memory allocation*/
 	if (ptr == NULL)
-     	{
+	{
 		return (NULL);/*if find any null return null*/
 	}
 
