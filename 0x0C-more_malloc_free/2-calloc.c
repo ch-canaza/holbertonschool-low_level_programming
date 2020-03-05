@@ -25,7 +25,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);/*if find any null return null*/
 	}
 
-	for (i = 0; i <= (nmemb * size); i++) /*running ptr to know its leght*/
+	for (i = 0; i < (nmemb * size); i++) /*running ptr to know its leght*/
 		ptr[i] = '\0';
 return (ptr);
 }
