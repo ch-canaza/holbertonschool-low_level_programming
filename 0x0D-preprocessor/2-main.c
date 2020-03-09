@@ -4,13 +4,13 @@
 /**
  * main - verify code
  *
- * return: 0
+ * Return:always  0
  */
 
-int main (void)
+int main(void)
 {
 	#ifdef FILENAME_H
-	printf("%s\n",__FILE__);
+	printf("%s\n", __FILE__);
 	#endif
 		return (0);
 }
