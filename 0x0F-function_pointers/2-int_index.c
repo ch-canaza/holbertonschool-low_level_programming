@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include "function_pointers.h"
 /**
  * int_index - function that prints names
  * @size: pointer
