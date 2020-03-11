@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include "holberton.h"
-#include "function_pointers.h"
 
 /**
  * array_iterator - function that prints names
