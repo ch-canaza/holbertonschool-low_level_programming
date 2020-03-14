@@ -1,0 +1,18 @@
+#include "dog.h"
+#include<stdlib.h>
+
+/**
+ * dog_t - new struct
+ * @d: pointer to new dog
+ *
+ */
+
+void free_dog(dog_t *d)
+{
+	if(d)
+	{
+		free(d->name);
+		free(d->owner);
+		free (d);
+	}
+}

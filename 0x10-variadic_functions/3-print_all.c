@@ -63,7 +63,7 @@ void print_all(const char * const format, ...)
 		{
 			if (fmt_s[j].symbol[0] == format[i])
 			{
-				fmt_s[j].p(vadlis);
+				fmt_s[j].p(vadlis); /*llamada a la funcion*/
 				if (fmt_s[j + 1].symbol != NULL)
 					printf(", ");
 				break;
