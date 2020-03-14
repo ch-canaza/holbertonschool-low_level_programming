@@ -1,41 +1,28 @@
+#include "variadic_functions.h"
 #include <stdio.h>
 #include <stdarg.h>
-#include "variadic_functions.h"
-/**
- * print_numbers-sum al the given args
- * const: it is a constat
- * @n: integer number
- * @...: unknown args
- * @separator: constant value
- * Return: value of the sum
- */
 
+/**
+ * print_numbers - Entry point
+ * Desc: Entry
+ *@n: int value
+ *@separator: char
+ * Return: Always 0 (Success)
+ */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	va_list vadlis;
+	va_list valist;
 	unsigned int i;
 
-	if (n == 0)
-		return;
-	if (separator == NULL)
-		printf(" ");
-
-	va_start(vadlis, n);
-
-	for (i = 0; i < n; i++)
+	va_start(valist, n);
+	for (i = 0 ; i < n ; i++)
 	{
-
-		printf("%d", va_arg(vadlis, int));
-		if (i < (n - 1) && separator)
-
-		printf("%s", separator);
+		printf("%d", va_arg(valist, int));
+		if (separator != 0 && i < n - 1)
+		{
+			printf("%s", separator);
+		}
 	}
-	va_end(vadlis);
-	{
-
-
-
-	}
+	va_end(valist);
 	printf("\n");
-	/*return;*/
 }
