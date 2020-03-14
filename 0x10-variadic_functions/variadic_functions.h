@@ -14,5 +14,5 @@ typedef struct format
 {
 	char *symbol;
 	void (*p)();
-}f_t;
+} f_t;
 #endif
