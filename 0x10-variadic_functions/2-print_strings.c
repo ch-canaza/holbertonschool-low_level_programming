@@ -20,7 +20,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		return;
 
 	va_start(vadlis, n);
-	
+
 	/**p = n;*/
 	for (i = 0; i != n ; i++)
 	{
