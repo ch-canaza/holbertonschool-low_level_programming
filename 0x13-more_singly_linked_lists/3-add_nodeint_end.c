@@ -1,7 +1,7 @@
 #include "lists.h"
 #include <stdio.h>
 /**
- * add _nodeint_end - adds elements at the end of a  linked list
+ * add_nodeint_end - adds elements at the end of a  linked list
  * @head: pointer to head of rhe list
  *@n: number of elements to add
  * Return: the address of the new node
