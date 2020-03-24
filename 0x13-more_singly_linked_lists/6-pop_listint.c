@@ -15,7 +15,7 @@ int pop_listint(listint_t **head)
 
 	/*if list is empty*/
 	if (*head == NULL)
-		return(0);
+		return (0);
 
 	/*give head value to aux2*/
 	aux2 = *head;
@@ -29,5 +29,5 @@ int pop_listint(listint_t **head)
 		free(aux2);
 
 		}
-		return(n);
+		return (n);
 }
