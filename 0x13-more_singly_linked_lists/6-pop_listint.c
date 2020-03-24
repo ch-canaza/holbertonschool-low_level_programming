@@ -22,7 +22,7 @@ int pop_listint(listint_t **head)
 
 		{
 	/*head is now pointer to next node */
-		*head = aux2->next;
+			*head = (*head)->next;
 
 		/*n is now pointer to next value*/
 		n = aux2->n;
