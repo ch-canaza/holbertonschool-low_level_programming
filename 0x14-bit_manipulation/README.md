@@ -1,4 +1,4 @@
-# | 0x13. C - More singly linked lists |
+# | 0x14. C - More singly linked lists |
 
 
 ## How to use linked lists
@@ -6,45 +6,29 @@
 ## Start to look for the right source of information without too much help
 
 
-### 0. Print list
+### 0.0
 
-Write a function that prints all the elements of a listint_t list.
+Write a function that converts a binary number to an unsigned int.
 
-### 1. List length
+### 1.1
 
-Write a function that returns the number of elements in a linked listint_t list.
+Write a function that prints the binary representation of a number.
 
-### 2. Add node
+### 2.10
+ write a function that returns the value of a bit at a given index..
 
-Write a function that adds a new node at the beginning of a listint_t list.
+### 3.11
 
-### 3. Add node at the end
+Write a function that sets the value of a bit to 1 at a given index..
 
-Write a function that adds a new node at the end of a listint_t list.
+### 4.100
 
-### 4. Free list
+Write a function that sets the value of a bit to 0 at a given index..
 
-Write a function that frees a listint_t list.
+### 5.101
 
-### 6. Pop
+Write a function that returns the number of bits you would need to flip to get from one number to another..
 
-Write a function that deletes the head node of a listint_t linked list, and returns the head node’s data (n).
-
-### 7. Get node at index
-
-Write a function that returns the nth node of a listint_t linked list.
-
-### 8. Sum list
-
-Write a function that returns the sum of all the data (n) of a listint_t linked list.
-
-### Insert
-
-Write a function that inserts a new node at a given position.
-
-### 10. Delete at index
-
-Write a function that deletes the node at index index of a listint_t linked list.
 
 
 > Christian Nazareno
