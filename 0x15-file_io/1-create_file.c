@@ -15,12 +15,12 @@ int create_file(const char *filename, char *text_content)
 		return (-1);
 	}
 
-	file = open(filename, O_CREAT | O_RDWR | O_TRUNC, S_IRUSR, S_IWUSR);
+	file = open(filename, O_CREAT | O_RDWR | O_TRUNC | S_IRUSR, S_IWUSR);
 	if (file == -1)
 	{
 		return (-1);
 	}
-	return (1);
+	/*return (1);*/
 
 	if (text_content)
 	{
@@ -30,10 +30,10 @@ int create_file(const char *filename, char *text_content)
 
 	}
 	if (w == -1 || w != i)
-		{
-			close(file);
-			return (-1);
-		}
+	{
+		close(file);
+		return (-1);
+	}
 
 		close(file);
 		return (1);
