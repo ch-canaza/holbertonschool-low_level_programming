@@ -29,10 +29,11 @@ int create_file(const char *filename, char *text_content)
 		w = write(file, text_content, i);
 
 	}
-	else
+	/*else
 	{
 		w = write(file, " ", 1);
-	}
+		}*/
+	
 	if (w == -1 || w != i)
 	{
 		close(file);
