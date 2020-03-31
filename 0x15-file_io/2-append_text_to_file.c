@@ -30,10 +30,10 @@ int append_text_to_file(const char *filename, char *text_content)
 
 	}
 	if (app == -1 || app != i)
-		{
-			close(file);
-			return (-1);
-		}
+	{
+		close(file);
+		return (-1);
+	}
 
 		close(file);
 		return (1);
