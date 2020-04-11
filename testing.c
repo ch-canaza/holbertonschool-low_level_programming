@@ -10,9 +10,7 @@ int main(int ac, char **ar, char **envp)
     {
         pos = 0;
         if (isatty(STDIN_FILENO))
-            printf("#cisfun$ ");
-        ///
-        //get_line(buffer);
+            printf("#cisfun$ ");     
         g = getline(&buffer, &size, stdin);
         if (g == EOF){
             if (isatty(STDIN_FILENO))
@@ -24,15 +22,7 @@ int main(int ac, char **ar, char **envp)
             exit(0);
         split(buffer, av);  
         if ((*buffer != '\n') && av[0]){
-            pid = fork();
-            if (pid == 0){
-                if (execve(av[0], av, envp) == -1){
-                    perror("./shell");
-                    exit(127);
-                }
-            }
-            else
-                wait(&status);
+            _exec(av);
         }
         pos = 0;
         while (pos < 10)
