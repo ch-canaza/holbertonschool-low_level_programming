@@ -1,38 +1,46 @@
 #include "header.h"
-int main(int ac, char **ar, char **envp)
+/**
+ *main - get commands to execute
+ *Return: nothing
+ */
+
+int main(void)
 {
-    char **env = __environ,*buffer = NULL;
-    char command[10],*av[10]; 
-    int bufsize = 100, pos = 0, status,g;;
-    size_t size = 0, pid;
-    
-    do
-    {
-        pos = 0;
-        if (isatty(STDIN_FILENO))
-            printf("#cisfun$ ");     
-        g = getline(&buffer, &size, stdin);
-        if (g == EOF){
-            if (isatty(STDIN_FILENO))
-                write(STDOUT_FILENO, "\n", 1);
-            free(buffer);
-            exit(0);
-        }
-        if (strcmp(buffer, "exit\n") == 0)
-            exit(0);
-        split(buffer, av);  
-        if ((*buffer != '\n') && av[0]){
-            _exec(av);
-        }
-        pos = 0;
-        while (pos < 10)
-        {
-            av[pos] = 0;
-            pos++;
-        }
-    } while (1);
-    av[pos] = NULL;
-    free(buffer);
-    free(av);
-    return (EXIT_SUCCESS);
+	char *buffer = NULL;
+	char *av[] = {NULL};
+	int pos = 0, g = 0;
+	size_t size = 0;
+
+	do {
+		pos = 0;
+		if (isatty(STDIN_FILENO))
+			printf("#cisfun$ ");
+		g = getline(&buffer, &size, stdin);
+		if (!buffer)
+			free(buffer);
+		if (g == EOF)
+		{
+			if (isatty(STDIN_FILENO))
+				write(STDOUT_FILENO, "\n", 1);
+			free(buffer);
+			exit(0);
+		}
+		if (strcmp(buffer, "exit\n") == 0)
+		{
+			free(buffer);
+			exit(0);
+		}
+		_split(buffer, av);
+		if ((*buffer != '\n') && av[0])
+		{
+			_exec(av);
+		}
+		while (pos < 10)
+		{
+			pos++;
+		}
+	} while (1);
+	free(buffer);
+	free(av);
+	return (EXIT_SUCCESS);
 }
