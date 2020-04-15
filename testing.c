@@ -7,8 +7,9 @@
  *Return: nothing
  */
 
-int main(int ac, char **ar, char *envp[])
+int main(int ac, char *ar[], char *envp[])
 {
+	(void)envp;
 	(void)ac;
 	(void)ar;
 	char *buffer = NULL, *av[] = {NULL};
@@ -30,7 +31,9 @@ int main(int ac, char **ar, char *envp[])
 			exit(0);
 		}
 		if (strcmp(buffer, "exit\n") == 0)
+		{	free(buffer);
 			exit(0);
+		}
 		if (strcmp(buffer, "env\n") == 0)
 			print_e(envp);
 		_split(buffer, av);
@@ -43,5 +46,6 @@ int main(int ac, char **ar, char *envp[])
 	} while (1);
 	free(buffer);
 	free(av);
+	free(envp);
 	return (EXIT_SUCCESS);
 }

@@ -1,22 +1,20 @@
-#include "header.h"  
-// Most of the C compilers support a third parameter to main which 
-// store all envorinment variables 
-int print_e(char **arg) 
+#include "header.h"
 
-{ 
-    //char *envp[] = {NULL};
-    int i; 
-    for (i = 0; arg[i] != NULL; i++) 
-        printf("\n%s", arg[i]); 
-    getchar(); 
-    return 0; 
-} 
-/*int main(int argc, char *argv[], char * envp[]) 
+/**
+ * print_e - printing environment
+ * @arg: arguments to look for env
+ * Return: nothing
+ *
+ */
+
+int print_e(char **arg)
+
 {
 
-	
+	int i;
 
-	print_e(envp);
-	
-	return(0);
-}*/
+	for (i = 0; arg[i] != NULL; i++)
+		printf("\n%s", arg[i]);
+	getchar();
+	return (0);
+}

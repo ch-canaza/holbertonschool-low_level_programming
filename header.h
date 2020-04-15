@@ -15,7 +15,7 @@ void get_line(char *buffer);
 void _exec(char *av[]);
 void free_function(int n, ...);
 int print_e(char **arg);
-//int main(*envp[]); 
+//int main(void); 
 
 //void get_line(char *buffer, size_t size, char *stdin);
 int main(int ac, char **ar, char *envp[]);
