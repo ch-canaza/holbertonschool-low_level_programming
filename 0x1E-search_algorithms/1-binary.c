@@ -1,7 +1,7 @@
 #include "search_algos.h"
 
 /**
- * recursive_binary - recursively searched for a value using binary search
+ * rec_binary_s - recursively searched for a value using binary search
  * @array: array to search in
  * @left: starting index
  * @right: ending index
@@ -13,9 +13,9 @@
 int rec_binary_s(int *array, size_t left, size_t right, int value)
 {
 	size_t mid = left;
-	
+
 	if (left > right)
-		return(-1);
+		return (-1);
 	printf("Searching in array: ");
 	while (mid < right)
 	{
@@ -23,9 +23,9 @@ int rec_binary_s(int *array, size_t left, size_t right, int value)
 		mid++;
 	}
 	printf("%u\n", array[mid]);
-	
+
 	mid = left + (right - left) / 2;
-	
+
 	if (array[mid] == value)
 		return (mid);
 	if (array[mid] > value)
